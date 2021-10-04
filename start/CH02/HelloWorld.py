@@ -5,7 +5,7 @@
 
 print('Hello World')
 name = input('name = ')
-print('Hello, ' + x + '. It is a very nice day today. How old are you?')
-name = input('age = ')
-age = int(x) + 2
-print('In two years, you will be ' + str(a) + 'years old')
+print('Hello, ' + name + '. It is a very nice day today. How old are you?')
+currentage = input('age = ')
+realage = int(currentage) + 2
+print('In two years, you will be ' + str(realage) + ' years old')
