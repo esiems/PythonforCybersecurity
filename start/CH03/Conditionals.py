@@ -2,7 +2,7 @@
 # example workign with conditionals
 #By Eric October 2021
 
-today = input("Is today a good day? y/n")
+today = input("Is today a good day? y/n: ")
 if today == "y":
     print("Yes it is.")
 elif today == "n":
