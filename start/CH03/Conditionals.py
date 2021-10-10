@@ -4,7 +4,8 @@
 
 today = input("Is today a good day? y/n: ")
 if today == "y":
-    print("Yes it is.")
+    for x in range(10):
+        print("Yes it is.")
 elif today == "n":
     print("Really? I think it is lovely.")
 else:
