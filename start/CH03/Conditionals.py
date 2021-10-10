@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 # example workign with conditionals
-#By Eric
-# 
-number = int(input("Choose a number between 1 and 4: ")) 
-if number == 1:
-    print("Wrong number, try again")
-    print("I said try again, loser!")
-elif number == 2:
-    print("Wrong!")
-elif number == 3:
-    print("correct")
+#By Eric October 2021
+
+today = input("Is today a good day? y/n")
+if today == "y":
+    print("Yes it is.")
+elif today == "n":
+    print("Really? I think it is lovely.")
 else:
-    print("wrong")
+    print("I don't understand.")
