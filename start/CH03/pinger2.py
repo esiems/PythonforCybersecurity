@@ -6,10 +6,8 @@ import platform
 import os
 
 
-for octet in range(254):
-    # Assign IP to ping to a variable
-    ip = "127.0.0.{0}".format(octet+1)
 
+def ping_address(ip_address):
     #Find OS
     current_os = platform.system().lower()
 
@@ -21,4 +19,10 @@ for octet in range(254):
 
     #run command and capture exit code
     exit_code = os.system(ping_cmd)
+    return exit_code
+
+for octet in range(254):
+    # Assign IP to ping to a variable
+    ip = "127.0.0.{0}".format(octet+1)
+    exit_code = ping_address(ip)
     print("{0}: {1}".format(ip,exit_code))
