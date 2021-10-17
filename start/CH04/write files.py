@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Sample script that writes to a file
-# By Eric 10/13
+# By Eric 10/17
 import os
 script_path = os.path.realpath(__file__)
 script_folder = os.path.split(script_path)
