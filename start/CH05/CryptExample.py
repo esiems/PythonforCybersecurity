@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Script that encrypts/decrypts text using cryptography module
-# By Ed Goad
-# date: 2/5/2021
+# By Eric Siemssen
+# date: october
 
 # May need 'pip3 install cryptography' or 
 # 'pip3 install cryptography -U' prior to running
