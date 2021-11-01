@@ -11,8 +11,10 @@ def read_dictionary(dictionary_file):
     file_contents=f.read()
     return file_contents
 
-def evaluate_password(hashed_password, algorithm_salt, plaintext_password):
-    crypted_password = crypt.crypt(plaintext_password,algorithm_salt)
+def evaluate_password(hashed_password, algorithm_salt, \
+     plaintext_password):
+    crypted_password = crypt.crypt(plaintext_password,\
+        algorithm_salt)
     if crypted_password == hashed_password:
         return True
     return False
@@ -24,7 +26,8 @@ passwords = read_dictionary(password_file)
 
 
 for password in passwords.splitlines():
-    result = evaluate_password(hashed_password, algorithm_salt, plaintext_password)
+    result = evaluate_password(hashed_password,\
+         algorithm_salt, password)
     if result:
         print("Match found: {0}".format(password))
         break
